@@ -1,5 +1,5 @@
 # Javascript Code Style
----
+
 That's my code style for writing consistent and readable Javascript...
 
 It was based on some great code style guides such from [Airbnb](https://github.com/airbnb/javascript) and [Idiomatic.js](https://github.com/rwaldron/idiomatic.js/).
