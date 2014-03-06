@@ -15,6 +15,8 @@ I'm sorry for the order of the content, I'll write everything and then organize 
 1. [use strict](#usestrict)
 1. [Variables](#variables)
 1. [Naming Conventions](#namingconventions)
+1. [Objects](#objects)
+1. [Arrays](#arrays)
 
 ## <a name='indentation'>Indentation</a>
 Use **2** spaces... and never mix spaces and tabs.
@@ -127,4 +129,15 @@ function Person(name) {
 }
 
 var mauricio = new Person('Mauricio');
+```
+
+## <a name='objects'>Objects</a>
+Use literal syntax to create objects
+```javascript
+// Nah...
+var myObj = new Object();
+
+// :D
+var myObj = {};
+
 ```
