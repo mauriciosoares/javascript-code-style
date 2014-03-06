@@ -18,6 +18,7 @@ I'm sorry for the order of the content, I'll write everything and then organize 
 1. [Objects](#objects)
 1. [Arrays](#arrays)
 1. [Functions](#functions)
+1. [Comments](#comments)
 
 ## <a name='indentation'>Indentation</a>
 Use **2** spaces... and never mix spaces and tabs.
@@ -214,3 +215,31 @@ function hellYeah(args) {
   // doing something
 }
 ```
+
+## <a name='comments'>Comments</a>
+For multiline comments use ``/* ... */``, and for single line comments use ``// ...``
+```javascript
+// bad
+
+// this is my
+// multiline comment,
+// and i should not use
+// it like that
+function nup() {
+ /* this is my single line comment */
+ console.log(':(');
+}
+
+// good
+
+/**
+ * This is my multiline comment
+ * and this is way better
+ * then the previous one
+ */
+function yep() {
+  // this is a single line comment
+  console.log(':)');
+}
+```
+Note: i think all code should be readable as it is, and should not need comments for every single line of code... if you write something difficult to understand than you should comment the block in a general way, and not comment every single line explaining what everything is doing.
