@@ -119,7 +119,7 @@ function person(name) {
   this.name = name;
 }
 
-var alan = new Person('Alan');
+var alan = new person('Alan');
 
 // That's some good stuff!
 function Person(name) {
