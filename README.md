@@ -96,6 +96,29 @@ function() {
 }
 ```
 
+Declare your variables in the beggining of the scope, it helps readability and can avoid some issues related to hoisting.
+```javascript
+// not good
+function test() {
+  console.log('Something');
+  callSomeFunction();
+  
+  var myVar = true;
+  
+  return myVar;
+}
+
+// good
+function test() {
+  var myVar = true;
+
+  console.log('Something');
+  callSomeFunction(); 
+  
+  return myVar;
+}
+```
+
 ## <a name='namingconventions'>Naming Conventions</a>
 There are some patterns I like to follown when naming my variables and functions...
 
