@@ -30,7 +30,7 @@ if(true) {
 ```
 
 ## <a name='strings'>Strings</a>
-Use single quotes `''` instead of double quotes `""`.
+Use single quotes `' '` instead of double quotes `" "`.
 ```javascript
 // Bad
 var foo = "Foo";
