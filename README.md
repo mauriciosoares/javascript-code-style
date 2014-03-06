@@ -41,6 +41,18 @@ var foo = "Foo";
 var foo = 'Foo';
 ```
 
+If your string is too long, break it into multiple lines... Also don't forget to indent those lines
+```javascript
+// super bad (awesome song)
+var text = 'I came home Like a stone And I fell heavy into your arms These days of dust Which we\'ve known Will blow away with this new sun  And I\'ll kneel down Wait for now And I\'ll kneel down Know my ground  And I\'ll wait I will wait for you And I\'ll wait I will wait for you';
+
+// super good
+var text = 'I came home Like a stone And I fell heavy into your arms ' +
+  'These days of dust Which we\'ve known Will blow away with this new sun ' +
+  'And I\'ll kneel down Wait for now And I\'ll kneel down Know my ground ' +
+  'And I\'ll wait I will wait for you And I\'ll wait I will wait for you';
+```
+
 ## <a name='semicolons'>Semicolons</a>
 Use it! no matter what people say about "You don't have to use semicolons in Javascript", it makes your code more readable, and in some cases, it can avoid some unexpected errors.
 ```javascript
