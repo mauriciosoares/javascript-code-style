@@ -19,6 +19,7 @@ I'm sorry for the order of the content, I'll write everything and then organize 
 1. [Arrays](#arrays)
 1. [Functions](#functions)
 1. [Comments](#comments)
+1. [JQuery](#jquery)
 
 ## <a name='indentation'>Indentation</a>
 Use **2** spaces... and never mix spaces and tabs.
@@ -243,3 +244,50 @@ function yep() {
 }
 ```
 Note: i think all code should be readable as it is, and should not need comments for every single line of code... if you write something difficult to understand than you should comment the block in a general way, and not comment every single line explaining what everything is doing.
+
+## <a name='jquery'>JQuery</a>
+Cache your actions, and use ``$`` in front of a variable that is cached.
+```javascript
+
+// bad
+(function() {
+  $('.elem').fadeIn('fast');
+
+  // some stuff
+
+  $('.elem').fadeOut('fast');
+} ());
+
+// better
+(function() {
+  var elem = $('.elem');
+  elem.fadeIn('fast');
+  
+  // stuff
+  
+  elem.fadeOut('fast');
+} ());
+
+// best
+(function() {
+  var $elem = $('.elem');
+  $elem.fadeIn('fast');
+  
+  // stuff
+  
+  $elem.fadeOut('fast');
+} ());
+```
+
+When using cascading with jquery, split it into multiple lines!
+```javascript
+$('.elem').fadeIn('fast').fadeOut('fast').show().hide(); // <- that's horrible to read!
+
+$('.elem').fadeIn('fast');
+  .fadeOut('fast')
+  .show()
+  .hide();
+```
+
+----
+That's it for now... I'll keep implementing this doc, and feel free to fork!
