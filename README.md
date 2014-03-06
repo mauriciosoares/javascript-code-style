@@ -132,12 +132,35 @@ var mauricio = new Person('Mauricio');
 ```
 
 ## <a name='objects'>Objects</a>
-Use literal syntax to create objects
+Use literal syntax to create objects.
 ```javascript
 // Nah...
 var myObj = new Object();
 
 // :D
 var myObj = {};
+
+```
+
+## <a name='arrays'>Arrays</a>
+Use literal syntax to create arrays.
+```javascript
+// Nope...
+var myArray = new Array();
+
+// :D
+var myArray = [];
+
+```
+
+Use Array.push to add items into the end of an array
+
+```javascript
+var myArray = [];
+
+// Bad
+myArray[myArray.length] = 'Hey friend';
+
+myArray.push('Hey Friend!');
 
 ```
