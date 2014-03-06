@@ -17,6 +17,7 @@ I'm sorry for the order of the content, I'll write everything and then organize 
 1. [Naming Conventions](#namingconventions)
 1. [Objects](#objects)
 1. [Arrays](#arrays)
+1. [Functions](#functions)
 
 ## <a name='indentation'>Indentation</a>
 Use **2** spaces... and never mix spaces and tabs.
@@ -175,4 +176,18 @@ myArray[myArray.length] = 'Hey friend';
 
 myArray.push('Hey Friend!');
 
+```
+
+## <a name='functions'>Functions</a>
+Never use ``arguments`` as a parameter of a function
+```javascript
+// never!
+function hellNo(arguments) {
+  // doing something
+}
+
+// that's the way i like it
+function hellYeah(args) {
+  // doing something
+}
 ```
